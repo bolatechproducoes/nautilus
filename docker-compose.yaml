@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+  db:
+    build: ./mysql/
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 278315
+      MYSQL_DATABASE: dbnaval
+    ports:
+      - "3306:3306"
+    networks:
+      - dockercompose
+
+  backend:
+    depends_on:
+      - db
+    build: ./Backend/
+    ports:
+      - "3001:3001"
+    restart: always
+    volumes:
+      - /home/noteubuntu/Área de Trabalho/Projetos/Nautico/Backend:/dist
+    networks:
+      - dockercompose
+  frontend:
+    depends_on:
+      - backend
+    build: ./Frontend/
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - /home/noteubuntu/Área de Trabalho/Projetos/Nautico/Frontend:/dist
+    networks:
+      - dockercompose
+networks:
+  dockercompose:
+volumes:
+  db_data: {}
