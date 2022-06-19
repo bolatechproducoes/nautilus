@@ -1,0 +1,9 @@
+[submodule "mysql"]
+	path = mysql
+	url = https://github.com/bolatechproducoes/mySQLNaval.git
+[submodule "Backend"]
+	path = Backend
+	url = https://github.com/bolatechproducoes/backendNaval.git
+[submodule "Frontend"]
+	path = Frontend
+	url = https://github.com/bolatechproducoes/frontendNaval.git
