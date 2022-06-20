@@ -17,3 +17,10 @@ tela de visualização dos barcos cadastrados
 
 ![Tela Cadastro](/cadastro.png)
 tela de cadastro de estaleiros
+
+### Como esta organizado o projeto?
+O projeto esta divido em 4 repositórios, sendo este o elo de ligação entre eles através do uso de submodule do git, você pode acessa-los pelos links:
+* Repositório Principal: https://github.com/bolatechproducoes/nautilus
+* Repositório do Banco de Dados: https://github.com/bolatechproducoes/mySQLNaval
+* Repositório do Backend: https://github.com/bolatechproducoes/backendNaval
+* Repositório do Frontend: https://github.com/bolatechproducoes/frontendNaval
