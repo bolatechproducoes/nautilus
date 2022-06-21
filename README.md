@@ -24,3 +24,69 @@ O projeto esta divido em 4 repositórios, sendo este o elo de ligação entre el
 * Repositório do Banco de Dados: https://github.com/bolatechproducoes/mySQLNaval
 * Repositório do Backend: https://github.com/bolatechproducoes/backendNaval
 * Repositório do Frontend: https://github.com/bolatechproducoes/frontendNaval
+
+### Como baixar e rodar o projeto?
+1. Crie uma pasta para o projeto e acesse ela pelo terminal.
+2. Execute o comando: git clone https://github.com/bolatechproducoes/nautilus.git .
+3. Execute o comando: git clone https://github.com/bolatechproducoes/mySQLNaval.git mysql
+4. Execute o comando: git clone https://github.com/bolatechproducoes/backendNaval.git Backend
+5. Execute o comando: git clone https://github.com/bolatechproducoes/frontendNaval.git Frontend
+6. Acesse a pasta Backend pelo VsCode e crie um arquivo .env com as seguintes configurações:
+```env
+DATABASE=dbnaval
+DATABASE_HOST=192.168.0.17    ===> Trocar pelo ip do seu computador na rede 
+DATABASE_PORT=3306
+DATABASE_USERNAME=root
+DATABASE_PASSWORD=278315
+
+TOKEN_SECRET=FGJVGvvjvgvkHVJVJV67546474674hvuHMVJHV
+TOKEN_EXPIRATION=7d
+
+APP_URL=http://localhost:3001
+APP_PORT=3001
+```
+7. Acesse a pasta principal do projeto com o VsCode e altere o arquivo docker-compose.yaml mudando o endereço para o do seu computador como no exemplo abaixo:
+```yaml
+version: '3.3'
+
+services:
+  db:
+    build: ./mysql/
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 278315
+      MYSQL_DATABASE: dbnaval
+    ports:
+      - "3306:3306"
+    networks:
+      - dockercompose
+
+  backend:
+    depends_on:
+      - db
+    build: ./Backend/
+    ports:
+      - "3001:3001"
+    restart: always
+    volumes:
+      - COLOCAR-AQUI-O-ENDEREÇO-DA-PASTA-BACKEND-NO-SEU-PC-AQUI:/dist
+    networks:
+      - dockercompose
+  frontend:
+    depends_on:
+      - backend
+    build: ./Frontend/
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - COLOCAR-AQUI-O-ENDEREÇO-DA-PASTA-FRONTEND-NO-SEU-PC-AQUI:/dist
+    networks:
+      - dockercompose
+networks:
+  dockercompose:
+volumes:
+  db_data: {}
+```
