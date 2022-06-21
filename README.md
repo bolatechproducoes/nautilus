@@ -118,3 +118,11 @@ Clique no botão aplicar na primeira tela e apply na segunda tela
 13. Abra a pasta backend no terminal e digite o comando: npx sequelize db:migrate
 14. Volte no terminal que você deixou rodando o docker-compose up e pare o processo apertando ctrl+c ou caso tenha fechado o terminal abra uma nova janela do terminal na pasta do projeto e execute o comando: docker-compose down
 15. Na pasta do projeto execute o comando docker-compose up e pronto, a aplicação estará rodando, o frontend na porta 3000, o backend na porta 3001 e o banco de dados na porta 3306, você também pode dar o build do container do banco de dados, rodar só ele e rodar o backend pelo VsCode com o comando npm run dev no terminal e o frontend com o comando npm start.
+
+### Como foi pensado o banco de dados e as tabelas?
+As tabelas e sua relações estão descritas na imagem abaixo:
+
+![banco de dados](/planilhas/'Relacionamento das Tabelas.jpg)
+
+Na pasta "planilhas" deste projeto tem um .xls com todos seus campos e atributos
+
