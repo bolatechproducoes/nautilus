@@ -126,3 +126,12 @@ As tabelas e sua relações estão descritas na imagem abaixo:
 
 Na pasta "planilhas" deste projeto tem um .xls com todos seus campos e atributos
 
+As tabelas e campos são criados atraves de migrations, as quais você pode acessar em Backend/src/database/migrations e o ORM utilizado na aplicação é Sequelize
+
+### Como foi pensada a estrutura de pastas do projeto?
+A estrutura de pastas foi feita com base no último projeto em JavaScript do curso de TypeScript e JavaScript do Professor Luiz Otávio Miranda na Udemy. Esse projeto surgiu como um autodesafio de aplicação dos conhecimentos adquiridos durante.
+
+### Este projeto esta pronto?
+Não, e isto é proposital, este é um projeto de treino, consegui atingir o objetivo que me atribui com ele e deixo agora para quem quiser treinar seus conhecimentos em JavaScript, segue uma lista de correção de bug e features que podem ser implementadas a partir deste código, se você está fazendo o curso do Otávio Miranda na Udemy e já terminou as sessões sobre JavaScript conseguirá sem problemas rodar e implentar este código.
+
+### O que tem para fazer/treinar neste projeto?
