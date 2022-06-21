@@ -100,6 +100,17 @@ Obs.2 no linux o Backend e Frontend funcionaram com bind mount com as alteraçõ
 8. Vá na pasta do projeto pelo terminal e execute o comando: docker-compose up
 9. Espere até o Docker criar as imagens e subir os containers e a aplicação estará rodando em http://localhost:3000, mas ainda será necessário configurar o banco de dados para que a aplicação funcione.
 10. Rode o MySQL Workbench e acesse o banco de dados que estará rodando em http://localhost:3000, utilize a senha 278315 para acessar o usuario root
+
 ![banco de dados](/bdworkbench.png)
 - Coloque a senha 278315 e aperte ok
+
 ![senha](/senhabd.png)
+
+11. Crie um banco de dados chamado bdnaval clicando com o botão da direita do mouse na aba lateral esquerda e escolhendo a opção create schema.
+12. Configure o banco de dados como na imagem abaixo
+
+![config db](/configdb.png)
+
+Click no botão aplicar na primeira tela e apply na segunda tela
+
+![config db2](/configdb2.png)
