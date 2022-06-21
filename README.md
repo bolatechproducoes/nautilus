@@ -1,8 +1,15 @@
 # Nautilus
 Aplicação com backend e frontend em JavaScript e banco de dados MySQL para treino de CRUD
 
-###### * [Sobre o projeto]([/nautilus#sobre-o-projeto](https://github.com/bolatechproducoes/nautilus#sobre-o-projeto))
+###### * [Sobre o projeto](https://github.com/bolatechproducoes/nautilus#sobre-o-projeto)
 ###### * [O que o Nautilus se propõe a fazer](https://github.com/bolatechproducoes/nautilus#o-que-o-nautilos-se-prop%C3%B5e-a-fazer)
+###### * [Como esta organizado o projeto?](https://github.com/bolatechproducoes/nautilus#como-esta-organizado-o-projeto)
+###### * [Como baixar e rodar o projeto?](https://github.com/bolatechproducoes/nautilus#como-baixar-e-rodar-o-projeto)
+###### * [Como foi pensado o banco de dados e as tabelas?](https://github.com/bolatechproducoes/nautilus#como-foi-pensado-o-banco-de-dados-e-as-tabelas)
+###### * [Como foi pensada a estrutura de pastas do projeto?](https://github.com/bolatechproducoes/nautilus#como-foi-pensada-a-estrutura-de-pastas-do-projeto)
+###### * [Quais frameworks e tecnologias foram utilizadas neste projeto?](https://github.com/bolatechproducoes/nautilus#quais-frameworks-e-tecnologias-foram-utilizadas-neste-projeto)
+###### * [Este projeto esta pronto?](https://github.com/bolatechproducoes/nautilus#este-projeto-esta-pronto)
+###### * [O que tem para fazer neste projeto?](https://github.com/bolatechproducoes/nautilus#o-que-tem-para-fazertreinar-neste-projeto)
 
 ## Sobre o projeto:
 O Nautilus foi desenvolvido como um exercício para o treino de CRUD em JavaScript, utilizando o modelo de desenvolvimento com frontend, backend e banco de dados separados.
