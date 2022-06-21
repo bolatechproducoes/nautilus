@@ -26,6 +26,7 @@ O projeto esta divido em 4 repositórios, sendo este o elo de ligação entre el
 * Repositório do Frontend: https://github.com/bolatechproducoes/frontendNaval
 
 ### Como baixar e rodar o projeto?
+**É necessário ter o Git, o Docker e o MySQL Workbench instalados no seu pc para rodar esse projeto**
 1. Crie uma pasta para o projeto e acesse ela pelo terminal.
 2. Execute o comando: git clone https://github.com/bolatechproducoes/nautilus.git .
 3. Execute o comando: git clone https://github.com/bolatechproducoes/mySQLNaval.git mysql
@@ -90,3 +91,10 @@ networks:
 volumes:
   db_data: {}
 ```
+Você pode encontrar o endereço das pastas no seu computador abrindo o projeto com o VsCode e clicando com o botão da direita do mouse em cima da pasta e selecionando a opção "Copiar o Caminho" como na imagem abaixo:
+![Tela de barcos](/caminho-do-arquivo.png)
+Obs. no Windows as barras são invertidas, pode deixar como esta que irá funcionar
+Ons.2 no linux o Backend e Frontend funcionaram com bind mount com as alterações aplicadas no código sendo aplicadas no container rodando, no windows você tera que desligar (down) e religar (up) o docker compose para as alterações serem aplicadas
+8. Vá na pasta do projeto pelo terminal e execute o comando: docker-compose up
+9. Espere até o Docker criar as imagens e subir os containers e a aplicação estará rodando em http://localhost:3000, mas ainda será necessário configurar o banco de dados para que a aplicação funcione.
+10. 
