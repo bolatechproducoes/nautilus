@@ -129,9 +129,20 @@ Na pasta "planilhas" deste projeto tem um .xls com todos seus campos e atributos
 As tabelas e campos são criados atraves de migrations, as quais você pode acessar em Backend/src/database/migrations e o ORM utilizado na aplicação é Sequelize
 
 ### Como foi pensada a estrutura de pastas do projeto?
-A estrutura de pastas foi feita com base no último projeto em JavaScript do curso de TypeScript e JavaScript do Professor Luiz Otávio Miranda na Udemy. Esse projeto surgiu como um autodesafio de aplicação dos conhecimentos adquiridos durante.
+A estrutura de pastas foi feita com base no último projeto em JavaScript do curso de TypeScript e JavaScript do Professor Luiz Otávio Miranda na Udemy. Esse projeto surgiu como um autodesafio de aplicação dos conhecimentos adquiridos durante o curso.
 
 ### Este projeto esta pronto?
 Não, e isto é proposital, este é um projeto de treino, consegui atingir o objetivo que me atribui com ele e deixo agora para quem quiser treinar seus conhecimentos em JavaScript, segue uma lista de correção de bug e features que podem ser implementadas a partir deste código, se você está fazendo o curso do Otávio Miranda na Udemy e já terminou as sessões sobre JavaScript conseguirá sem problemas rodar e implentar este código.
 
 ### O que tem para fazer/treinar neste projeto?
+* Fazer a verificação da tipagem de dado dos telefones, no backend e frontend.
+* Fazer o responsivo do Frontend, ele foi desenvolvido somente para 1080x1920.
+* Acrescentar foto ao usuário e exibir o avatar no header.
+* Criar campo de usuario nas tabelas e um middleware de verificação de usuário nas consultas para que cada usuário acesse somente seus dados.
+* Modificar e alterar o frontend, fique a vontade, seja criativo!
+* Criar tabelas de regras de usuários, obrigar o usuario a escolher um perfil (proprietario, marinheiro, funcionário de clube ou marina, ou funcionário de estaleiro. Sendo que proprietários só podem acessar suas embarcaçãos, podem escolher um clube e acessar seus marinheiros, pode acessar também o estaleiro que fabricou sua embracação. Marinheiros só podem acessar as embarcações que foram designados e funcionários de clubes, marinas ou estaleiros só podem acessar as informações respectivas ao seu negócio e as embarcações vinculadas a eles.
+* Criar funções de pesquisa utilizando expressões regulares.
+* Aprimorar o funcionamento das caixas de seleção com valores vindos de tabelas.
+* Implementar serviço de envios de e-mail.
+
+Essas são apenas algumas idéias, fiquem a vontade para clonar, fazer forks e se quiserem pull requests, divirtam-se aplicando JavaScript neste projeto!
