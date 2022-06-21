@@ -92,9 +92,14 @@ volumes:
   db_data: {}
 ```
 Você pode encontrar o endereço das pastas no seu computador abrindo o projeto com o VsCode e clicando com o botão da direita do mouse em cima da pasta e selecionando a opção "Copiar o Caminho" como na imagem abaixo:
-![Tela de barcos](/caminho-do-arquivo.png)
+![caminho do arquivo](/caminho-do-arquivo.png)
 Obs. no Windows as barras são invertidas, pode deixar como esta que irá funcionar
-Ons.2 no linux o Backend e Frontend funcionaram com bind mount com as alterações aplicadas no código sendo aplicadas no container rodando, no windows você tera que desligar (down) e religar (up) o docker compose para as alterações serem aplicadas
+
+Obs.2 no linux o Backend e Frontend funcionaram com bind mount com as alterações aplicadas no código sendo aplicadas no container rodando, no windows você tera que desligar (down) e religar (up) o docker compose para as alterações serem aplicadas
+
 8. Vá na pasta do projeto pelo terminal e execute o comando: docker-compose up
 9. Espere até o Docker criar as imagens e subir os containers e a aplicação estará rodando em http://localhost:3000, mas ainda será necessário configurar o banco de dados para que a aplicação funcione.
-10. 
+10. Rode o MySQL Workbench e acesse o banco de dados que estará rodando em http://localhost:3000, utilize a senha 278315 para acessar o usuario root
+![banco de dados](/bdworkbench.png)
+- Coloque a senha 278315 e aperte ok
+![senha](/senhabd.png)
