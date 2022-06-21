@@ -122,7 +122,7 @@ Clique no botão aplicar na primeira tela e apply na segunda tela
 ### Como foi pensado o banco de dados e as tabelas?
 As tabelas e sua relações estão descritas na imagem abaixo:
 
-![banco de dados](/planilhas/'Relacionamento das Tabelas.jpg)
+![banco de dados](/tabelas.jpg)
 
 Na pasta "planilhas" deste projeto tem um .xls com todos seus campos e atributos
 
