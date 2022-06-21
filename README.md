@@ -129,7 +129,10 @@ Na pasta "planilhas" deste projeto tem um .xls com todos seus campos e atributos
 As tabelas e campos são criados atraves de migrations, as quais você pode acessar em Backend/src/database/migrations e o ORM utilizado na aplicação é Sequelize
 
 ### Como foi pensada a estrutura de pastas do projeto?
-A estrutura de pastas foi feita com base no último projeto em JavaScript do curso de TypeScript e JavaScript do Professor Luiz Otávio Miranda na Udemy. Esse projeto surgiu como um autodesafio de aplicação dos conhecimentos adquiridos durante o curso.
+A estrutura de pastas foi feita com base no último projeto em JavaScript do Curso de TypeScript e JavaScript do Professor Luiz Otávio Miranda na Udemy. Esse projeto surgiu como um autodesafio de aplicação dos conhecimentos adquiridos durante o curso.
+
+### Quais frameworks e tecnologias foram utilizadas neste projeto?
+Neste projeto foi utilizado o ambiente Node com o instalador de pacotes npm, o banco de dados é o MySQL sendo utilizado o Sequelize como ORM para a comunicação com o backend. As rotas do backend foram construídas utilizando o Express, a parte de criptografia e segurança foi configurada com bcryptjs, cors, dotenv, helmet, e jsonwebtoken e para poder fazer o upload de imagens o multer. Para construir o frontend o framework utilizado foi o React, utilizando o axios para a comunicação com o backend, o Redux e o Saga para controlar os estados globais e as ações,o Toastify para gerar mensagens instantâneas, o Styled-component para criação de componentes entre outras tecnologias, como linters foram utilizados o eslint e o prettier.
 
 ### Este projeto esta pronto?
 Não, e isto é proposital, este é um projeto de treino, consegui atingir o objetivo que me atribui com ele e deixo agora para quem quiser treinar seus conhecimentos em JavaScript, segue uma lista de correção de bug e features que podem ser implementadas a partir deste código, se você está fazendo o curso do Otávio Miranda na Udemy e já terminou as sessões sobre JavaScript conseguirá sem problemas rodar e implentar este código.
