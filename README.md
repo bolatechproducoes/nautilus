@@ -1,8 +1,8 @@
 # Nautilus
 Aplicação com backend e frontend em JavaScript e banco de dados MySQL para treino de CRUD
 
-###### * [Sobre o projeto](/nautilus#sobre-o-projeto)
-###### * [O que o Nautilus se propõe a fazer](/nautilus#o-que-o-nautilos-se-prop%C3%B5e-a-fazer)
+###### * [Sobre o projeto]([/nautilus#sobre-o-projeto](https://github.com/bolatechproducoes/nautilus#sobre-o-projeto))
+###### * [O que o Nautilus se propõe a fazer](https://github.com/bolatechproducoes/nautilus#o-que-o-nautilos-se-prop%C3%B5e-a-fazer)
 
 ## Sobre o projeto:
 O Nautilus foi desenvolvido como um exercício para o treino de CRUD em JavaScript, utilizando o modelo de desenvolvimento com frontend, backend e banco de dados separados.
